@@ -131,6 +131,10 @@ public class CRC
         return sb.toString();
     }
 
+    /**
+     * Παίρνουμε τιμές από τον χρήστη και τις
+     * αποθηκεύουμε στις μεταβλητές της κλάσης.
+     */
     private void GetInput()
     {
         try
@@ -187,7 +191,7 @@ public class CRC
         // Παίρνουμε τιμές από τον χρήστη
         GetInput();
 
-        if (K >= 1000 && N >= 10000)
+        if ((K >= 1000 && N >= 10000) || N >= 1000000)
             System.out.println(" (*) This may take a while...");
 
         long loop = 0;
